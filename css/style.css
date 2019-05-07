@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 170px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #ccc;
+    text-align: right;
+}
+
+.btn-cart {
+    background: url(../img/shopping-cart-solid.svg) no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-top: 60px;
+    margin-right: 60px;
+    text-indent: -99999px;
+    border: 0;
+}
+
+.btn-cart:focus{
+    outline: 0;
+}
+
+.products{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-item{
+    width: 150px;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: right;
+}
+
+.product-item div{
+    margin: 10px;
+    height: 150px;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.product-item h3{
+    font-family: 'Comfortaa', cursive;
+}
+
+.product-item h4{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.product-item h4,
+.product-item h3{
+    margin: 10px;
+}
+
+.add,
+.remove{
+  text-decoration: none;
+  outline: none;
+  display: block;
+  width: 120px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  transition: .3s;
+    border: 1px solid;
+}
+.add:hover,
+.remove:hover{
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46,229,157,.4);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.basket{
+    position: absolute;
+    
+}
+
+.basket h2{
+    font-family: 'Comfortaa', cursive;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.remove:hover{
+    background: red;
+}
+
+.basket-item{
+    width: 300px;
+    height: 90px;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.basket-item h3{
+    font-family: 'Comfortaa', cursive;
+    float: left;
+    line-height: 90px;
+    margin-left: 10px;
+}
+
+.basket-item h4{
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.sum{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
